@@ -32,6 +32,7 @@ metadata:
 spec:
   containers:
   - name: nginx
+    image: nginx
     volumeMounts:
     - name: ebs-static
       mountPath: /usr/share/nginx/html
