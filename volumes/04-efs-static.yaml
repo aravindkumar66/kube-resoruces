@@ -30,9 +30,9 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ebs-static
+  name: efs-static
   labels:
-    purpose: ebs-static
+    purpose: efs-static
 spec:
   nodeSelector:
     topology.kubernetes.io/zone: us-east-1a
@@ -54,7 +54,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    purpose: ebs-static
+    purpose: efs-static
   ports:
   - name: nginx-svc-port
     protocol: TCP
