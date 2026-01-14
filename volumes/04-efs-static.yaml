@@ -19,7 +19,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: expense-efs
 spec:
-  VolumeName: expense-efs
+  volumeName: expense-efs
   accessModes:
     - ReadWriteOnce
   storageClassName: ""
